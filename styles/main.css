@@ -30,8 +30,11 @@ header {
 
 .buttons {
     display: flex;
-    padding-left: 80px;
-    
+    padding-left: 80px;   
+}
+
+.buttons1 {
+    display: none;
 }
 
 .reg {
@@ -271,6 +274,171 @@ h3,h4 {
 }
 
 .welcome_btn {
-    margin-left: -15px;
+    margin-left: -15px;   
+}
+
+@media screen and (max-width: 576px) {
+    header {
+        display: none;
+
+        
+        
+    }
     
+    .text {
+        display: none;
+        font-size: 11px;
+        
+    
+        
+    }
+    
+    .buttons {
+        display: none;
+    }
+
+    .banner {
+        display: grid;
+        height: 89px;    
+        grid-template-columns: 1fr 1fr;
+        margin: 0 auto;
+        place-items: center;
+        gap: 4px;
+        
+        
+    }
+    
+    .logo {
+        display: flex;
+        font-size: 16px;
+        font-weight:1000;
+        color:black;
+        align-items: center;    
+    }
+
+    .shop {
+        display: none;
+    }
+
+    .buttons1 {
+        display: block;
+        padding-left: 80px;  
+        transform: scale(70%); 
+    }
+    
+    .reg {
+        display: flex;
+        height: 44px;
+        width: 131px;
+        background-color: #FFE8BD;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .entry {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-left: 13px;
+        padding-top: 10px;
+    }
+
+    .menu {
+        column-gap: 10px;
+    }
+
+    .option {
+        font-size: 10px;
+    }
+    .search {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        transform: scale(80%);
+        font-size: 90%;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .search-form {
+        width: 100%;
+       
+    }
+    
+    .form_txt {
+        width: 540px;
+    }
+
+    .form_btn {
+        margin-left: none;
+    }
+
+    .item01 {
+        width: 500px;
+    }
+
+    .item02 {
+        width: 500px;
+    }
+
+    .item {
+        width: 500px;
+    }
+    
+    .car-brand{
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    
+    .point {
+        display: flex;
+        flex-wrap: wrap;
+        transform: scale(80%);
+        width: 100%;
+        height: 80%;
+        justify-content: center;
+    }
+
+    .x {
+        display: none;
+    }
+
+    .x2{
+        display: none;
+    }
+
+    .map {
+        transform: scale(100%);
+        padding-left: 0px;
+
+    }
+
+    .location {
+        transform: scale(80%);
+        margin-left: -0px;
+        font-size: 13px;
+    }
+
+    .welcome {
+        font-weight: bold;
+        font-size: 24px;
+        margin-left: 0px;
+        padding-top: 50px;
+        text-align: center;
+    }
+    
+    .welcome_btn {
+        margin-left: -0px;
+        text-align: center;
+        transform: scale(120%);
+    }
+
+    .br {
+        display: none;
+    }
+
+    .address {
+        margin-bottom: -40px;
+    }
+
 }
